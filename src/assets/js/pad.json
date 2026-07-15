@@ -1,0 +1,239 @@
+{
+  "图标库": [
+    {
+      "label": "iconfont",
+      "descript": "阿里巴巴矢量图标库",
+      "href": "https://www.iconfont.cn/"
+    },
+    {
+      "label": "iconPark",
+      "descript": "一个通过技术驱动矢量图标样式的开源图标库",
+      "href": "https://iconpark.oceanengine.com/home"
+    },
+    {
+      "label": "3d图标库",
+      "descript": "一个提供高质量、风格统一且可直接商用的 3D 图标与插图素材库",
+      "href": "https://www.thiings.co/things"
+    },
+    {
+      "label": "fontawesome",
+      "descript": "一个丰富的字体图标库",
+      "href": "https://fontawesome.com.cn/"
+    }
+  ],
+  "前端": [
+    {
+      "label": "element-plus",
+      "descript": "基于 Vue 3，面向设计师和开发者的组件库",
+      "href": "https://cn.element-plus.org/zh-CN/component/overview",
+      "tag": "Vue 3"
+    },
+    {
+      "label": "element-ui",
+      "descript": "Element，一套为开发者、设计师和产品经理准备的基于 Vue 2.0 的桌面端组件库",
+      "href": "https://element.eleme.cn/#/zh-CN/component/installation",
+      "tag": "Vue 2"
+    },
+    {
+      "label": "Vue Router",
+      "descript": "Vue.js 的官方路由,为 Vue.js 提供富有表现力、可配置的、方便的路由",
+      "href": "https://router.vuejs.org/zh/",
+      "tag": "Vue,路由"
+    },
+    {
+      "label": "vuejs",
+      "descript": "渐进式 JavaScript 框架,易学易用，性能出色，适用场景丰富的 Web 前端框架",
+      "href": "https://cn.vuejs.org/",
+      "tag": "Vue"
+    },
+    {
+      "label": "Vuex",
+      "descript": "一个专为 Vue.js 应用程序开发的状态管理模式 + 库",
+      "href": "https://vuex.vuejs.org/zh/",
+      "tag": "Vue,状态管理"
+    },
+    {
+      "label": "Pinia",
+      "descript": "一个符合直觉的 Vue.js 状态管理库",
+      "href": "https://pinia.vuejs.org/zh/",
+      "tag": "Vue,状态管理"
+    },
+    {
+      "label": "Vue CLI",
+      "descript": "Vue.js 开发的标准工具",
+      "href": "https://v3.cli.vuejs.org/zh/",
+      "tag": "Vue,脚手架"
+    },
+    {
+      "label": "Modern.js",
+      "descript": "基于 React 的渐进式 Web 开发框架",
+      "href": "https://modernjs.dev/zh/",
+      "tag": "React"
+    },
+    {
+      "label": "ArcoDesign",
+      "descript": "字节跳动出品的企业级设计系统",
+      "href": "https://arco.design/react/docs/start",
+      "tag": "Vue 3,React"
+    },
+    {
+      "label": "Ant Design",
+      "descript": "AI 友好的「设计系统」，让美与智能并进，让工作充满「灵感」与「快乐」",
+      "href": "https://ant.design/components/overview-cn/",
+      "tag": "React"
+    },
+    {
+      "label": "Ant Design Mobile",
+      "descript": "探索移动端 Web 的极致体验",
+      "href": "https://ant-design-mobile.antgroup.com/zh",
+      "tag": "React,Mobile"
+    },
+    {
+      "label": "Ant Design Mini",
+      "descript": "探索移动端小程序的极致体验",
+      "href": "https://ant-design-mini.antgroup.com/",
+      "tag": "支付宝小程序"
+    },
+    {
+      "label": "Ant Design Charts",
+      "descript": "简单好用的 React 图表库",
+      "href": "https://ant-design-charts.antgroup.com/",
+      "tag": "React"
+    },
+    {
+      "label": "UmiJS",
+      "descript": "可扩展的企业级前端应用框架",
+      "href": "https://umijs.org/",
+      "tag": "React,UmiJS"
+    },
+    {
+      "label": "qiankun",
+      "descript": "基于 single-spa 的微前端实现库",
+      "href": "https://qiankun.umijs.org/zh/guide",
+      "tag": "微前端"
+    },
+    {
+      "label": "vitejs",
+      "descript": "一种新型前端构建工具，能够显著提升前端开发体验",
+      "href": "https://cn.vitejs.dev/guide/",
+      "tag": "构建工具"
+    },
+    {
+      "label": "Vant",
+      "descript": "轻量、可定制的移动端 Vue 组件库",
+      "href": "https://vant-ui.github.io/vant/#/zh-CN",
+      "tag": "Vue,React,App,微信小程序,支付宝小程序"
+    },
+    {
+      "label": "Uni App",
+      "descript": "一个使用 Vue.js 开发所有前端应用的框架，一套代码多端使用",
+      "href": "https://uniapp.dcloud.net.cn/",
+      "tag": "Vue,App,小程序"
+    },
+    {
+      "label": "uView",
+      "descript": "uni-app生态专用的UI框架",
+      "href": "https://uviewui.com/components/intro.html",
+      "tag": "Vue,Uni App,App,小程序"
+    }
+  ],
+  "后端": [
+    {
+      "label": "MyBatis-Plus",
+      "descript": "MyBatis-Plus 是一个 MyBatis 的增强工具。MyBatis 是一个一流的持久化框架，支持自定义 SQL、存储过程和高级映射。MyBatis 几乎省去了所有 JDBC 代码、手动参数设置和结果检索。",
+      "href": "https://baomidou.com/introduce/",
+      "tag": "Java,MyBatis"
+    },
+    {
+      "label": "Spring",
+      "descript": "一个轻量级、非侵入式的 Java 企业级应用开发框架，其核心是通过控制反转（IoC）和面向切面编程（AOP）来简化复杂业务逻辑的开发与管理",
+      "href": "https://spring.io/",
+      "tag": "Java,开发框架"
+    },
+    {
+      "label": "Maven Repository",
+      "descript": "一个全球权威的 Java 开源构件仓库搜索引擎，提供海量 Maven、Gradle 等构建工具的依赖包版本查询、下载链接及引用配置代码",
+      "href": "https://mvnrepository.com/",
+      "tag": "Java,依赖包,Maven,Gradle"
+    },
+    {
+      "label": "Django",
+      "descript": "一个“电池内置”的全功能 Python Web 框架，自带后台管理、ORM 和安全机制，适合快速构建结构严谨的大型企业级应用",
+      "href": "https://www.djangoproject.com/",
+      "tag": "Python"
+    },
+    {
+      "label": "Flask",
+      "descript": "一个轻量级、微核心的 Python Web 框架，以极高的灵活性和丰富的扩展生态著称，适合开发者按需定制中小型应用或微服务",
+      "href": "https://flask.palletsprojects.com/zh-cn/stable/",
+      "tag": "Python"
+    },
+    {
+      "label": "FastAPI",
+      "descript": "一个基于 Python 类型提示的现代高性能 Web 框架，原生支持异步编程并自动生成 Swagger API 文档，是构建高效 RESTful API 的首选",
+      "href": "https://fastapi.tiangolo.com/",
+      "tag": "Python"
+    },
+    {
+      "label": "Tornado",
+      "descript": "一个基于非阻塞 I/O 事件循环的 Python Web 框架和网络库，擅长处理成千上万的并发长连接，常用于实时通信系统和高吞吐量场景",
+      "href": "https://www.tornadoweb.org/en/stable/",
+      "tag": "Python"
+    }
+  ],
+  "设计": [
+    {
+      "label": "Figma",
+      "descript": "一款基于浏览器的实时协作界面设计工具，它打破了设计与开发的壁垒，让团队能在同一画布上高效完成从原型到代码交付的全流程",
+      "href": "https://www.figma.com/files/team/1618550541458755547/recents-and-sharing?fuid=1618550540040751357",
+      "tag": ""
+    },
+    {
+      "label": "Canva可画",
+      "descript": "主打“零门槛”的在线平面设计平台，通过海量模板和拖拽式操作，让非设计专业人员也能快速制作出专业的海报、PPT 及社交媒体配图",
+      "href": "https://www.canva.cn/",
+      "tag": ""
+    },
+    {
+      "label": "花瓣",
+      "descript": "领先的视觉灵感采集与分享社区",
+      "href": "http://huaban.com/",
+      "tag": ""
+    },
+    {
+      "label": "boardmix",
+      "descript": "一款集思维导图、流程图、自由画布及 AI 辅助于一体的在线协作白板工具，旨在通过可视化的方式提升团队在头脑风暴、项目规划及远程协作中的效率",
+      "href": "https://boardmix.cn/",
+      "tag": ""
+    },
+    {
+      "label": "即梦AI",
+      "descript": "一站式AI创作平台",
+      "href": "https://jimeng.jianying.com/ai-tool/home",
+      "tag": ""
+    }
+  ],
+  "其他": [
+    {
+      "label": "Ant Design X",
+      "descript": "Ant Design 团队匠心呈现 RICH 设计范式，打造卓越 AI 界面解决方案，引领智能新体验。",
+      "href": "https://ant-design-x.antgroup.com/index-cn",
+      "tag": "AI UI库,React"
+    },{
+      "label": "Nuxt",
+      "descript": "全栈 Vue 框架，用 Vue 构建快速、生产准备的网页应用。基于文件的路由、自动导入和服务器端渲染——全部开箱即用。",
+      "href": "https://nuxt.com/modules/ui",
+      "tag": "全栈,Vue,服务端渲染"
+    },{
+      "label": "Nuxt UI",
+      "descript": "一个全面的 Vue UI 组件库（Nuxt 可选），支持 125+可访问的 Tailwind CSS 组件，用于构建现代 Web 应用。兼容 Nuxt 和普通 Vue 应用（Vite、Inertia、SSR）",
+      "href": "https://ui.nuxt.com/",
+      "tag": "Vue,Chat"
+    },{
+      "label": "Vercel",
+      "descript": "Vercel 官方开源项目集合，汇集了包括 AI SDK、Turbopack 在内的前沿 Web 开发工具与框架，旨在为开发者提供构建现代高性能应用的最佳实践与基础设施支持",
+      "href": "https://vercel.com/oss",
+      "tag": "AI SDK,UI,Core"
+    }
+  ]
+}
