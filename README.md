@@ -1,70 +1,75 @@
 # Tool Website
 
-一个基于 `Vue 3 + TypeScript + Vite + Element Plus` 搭建的前端工具网站，当前主要提供常用文本处理、图片处理和签名生成能力，适合内部工具集合、轻量在线工具站点或继续扩展为多功能工作台。
+一个基于 `Vue 3 + TypeScript + Vite + Element Plus` 的前端工具站，聚合了签名生成、加解密、图片压缩、JSON 整理和便签资源导航等常用能力，适合作为个人工具箱或静态站点部署到 GitHub Pages。
 
-## 项目定位
+## 在线访问
 
-当前项目以“工具网站”为核心目标，页面风格保持统一卡片化布局，强调：
+- GitHub Pages: [https://gblking.github.io/toolWebsite/](https://gblking.github.io/toolWebsite/)
 
-- 常用工具集中展示
-- 输入、处理、结果分区清晰
-- 支持本地文件导入导出
-- 尽量在前端完成处理，减少后端依赖
+## 功能概览
 
-## 当前功能
+### 1. 首页
 
-### 1. 个性签名
+路由：`/#/`
+
+- 展示项目技术栈
+- 演示 Pinia 状态管理
+- 演示 CryptoJS 摘要计算
+- 展示 Axios 基础配置
+
+### 2. 个性签名生成
 
 路由：`/#/tools`
 
-支持能力：
+- 输入签名文本并实时预览
+- 切换多种本地字体
+- 配置字号、文字颜色、背景色、边框、圆角、边距
+- 支持透明背景
+- 导出 `PNG` 图片
 
-- 自定义签名文本
-- 多字体切换
-- 字号、字体颜色、背景颜色、边框、圆角、边距配置
-- 预览签名效果
-- 导出 PNG 图片
-
-### 2. 加解密工具
+### 3. 加解密与编码工具
 
 路由：`/#/encrypt`
 
-支持能力：
-
-- 对称加解密：`AES`、`DES`、`Triple DES`、`Rabbit`、`RC4`
+- 对称加密：`AES`、`DES`、`Triple DES`、`Rabbit`、`RC4`
 - 摘要算法：`MD5`、`SHA-1`、`SHA-256`、`SHA-512`
-- HMAC：`HMAC-SHA1`、`HMAC-SHA256`、`HMAC-SHA512`
+- `HMAC` 系列摘要
 - 编码转换：`Base64`、`URL 编码/解码`
 - 国密算法：`SM2`、`SM3`、`SM4`
 - 非对称加密：`RSA`
-- 结果复制、回填、清空
 
-### 3. 图片压缩
+### 4. 图片压缩与格式转换
 
 路由：`/#/image-compression`
 
-支持能力：
+- 支持上传 `JPEG / PNG / WEBP / BMP`
+- 调整压缩质量
+- 转换输出格式
+- 对比原图与压缩结果
+- 查看压缩前后体积、尺寸和压缩比例
+- 下载处理结果
 
-- 上传 `jpeg / png / webp / bmp`
-- 压缩质量调节
-- 输出格式转换
-- 原图与压缩后图片预览
-- 显示压缩前后体积、尺寸、压缩比例
-- 支持重新压缩、下载结果、清空状态
-
-### 4. JSON 工具
+### 5. JSON 校验与整理工具
 
 路由：`/#/json-tools`
-
-支持能力：
 
 - JSON 校验
 - JSON 格式化
 - JSON 压缩
-- 上传 `.json` 文件并回填输入框
+- 上传 `.json` 文件导入内容
 - 复制结果
 - 下载当前内容为 `.json` 文件
-- 清空输入与结果
+
+### 6. 便签资源导航
+
+路由：`/#/pad`
+
+- 基于 `src/assets/js/pad.json` 管理资源数据
+- 按分类浏览常用站点与工具资源
+- 支持关键字模糊搜索
+- 支持 Tag 检索
+- 支持分类锚点快速跳转
+- 点击卡片新窗口打开目标链接
 
 ## 技术栈
 
@@ -81,29 +86,33 @@
 - `JSEncrypt`
 - `browser-image-compression`
 
-## 目录结构
+## 项目结构
 
 ```text
 src/
-├─ assets/                静态资源、字体、图片、常量
+├─ assets/                静态资源、字体、图片、配置数据
 ├─ components/            通用组件
 ├─ router/                路由配置
+├─ stores/                Pinia 状态
 ├─ styles/                全局样式
+├─ utils/                 工具方法
 ├─ views/
 │  ├─ Home.vue            首页
-│  ├─ Signature/          个性签名
-│  ├─ Encrypt/            加解密工具
-│  ├─ ImageCompression/   图片压缩
-│  └─ JsonTools/          JSON 工具
+│  ├─ Signature/          个性签名生成
+│  ├─ Encrypt/            加解密与编码工具
+│  ├─ ImageCompression/   图片压缩与格式转换
+│  ├─ JsonTools/          JSON 校验与整理工具
+│  └─ Pad/                便签资源导航
+├─ App.vue                应用壳
 └─ main.ts                应用入口
 ```
 
 ## 本地开发
 
-### 环境版本
+### 环境要求
 
-- `Node.js`: `v22.13.0`
-- `Yarn`: `4.5.1`
+- `Node.js 22+`
+- `Yarn 4`
 
 ### 安装依赖
 
@@ -117,7 +126,7 @@ yarn install
 yarn dev
 ```
 
-### 打包构建
+### 构建生产版本
 
 ```bash
 yarn build
@@ -129,26 +138,43 @@ yarn build
 yarn preview
 ```
 
+## GitHub Pages 部署
+
+项目已配置 GitHub Actions 自动部署：
+
+- 工作流文件：`.github/workflows/deploy-pages.yml`
+- 推送到 `main` 分支后自动执行构建与发布
+- `vite.config.ts` 已区分开发与构建场景：
+  - 开发时 `base` 为 `/`
+  - 构建时 `base` 为 `/toolWebsite/`
+
+GitHub 仓库中需要确认：
+
+1. 进入 `Settings`
+2. 打开 `Pages`
+3. 在 `Build and deployment` 中将 `Source` 设置为 `GitHub Actions`
+
 ## 路由说明
 
 | 页面 | 路由 |
 | --- | --- |
 | 首页 | `/#/` |
-| 个性签名 | `/#/tools` |
-| 加解密 | `/#/encrypt` |
-| 图片压缩 | `/#/image-compression` |
-| JSON工具 | `/#/json-tools` |
+| 个性签名生成 | `/#/tools` |
+| 加解密与编码工具 | `/#/encrypt` |
+| 图片压缩与格式转换 | `/#/image-compression` |
+| JSON 校验与整理工具 | `/#/json-tools` |
+| 便签资源导航 | `/#/pad` |
 
 ## 开发说明
 
-- 当前项目使用 `hash` 路由，适合静态部署场景。
-- 大部分工具逻辑在前端本地执行，注意浏览器兼容性和大文件性能。
-- 字体类功能依赖本地字体资源，若更换字体文件，需关注浏览器对字体格式的解析兼容性。
-- 图片压缩与格式转换为纯前端处理，超大图片时可能受到浏览器内存限制。
+- 当前项目使用 `hash` 路由，适合 GitHub Pages 这类静态托管场景
+- 大部分处理逻辑都在前端本地完成，无需依赖后端服务
+- 字体相关功能依赖本地字体资源，构建产物体积会相对较大
+- 图片压缩和格式转换在浏览器内执行，超大文件时会受到浏览器内存限制
 
 ## 后续可扩展方向
 
-- 新增二维码、时间戳转换、正则测试、JWT 解析等常用工具
-- 支持工具分类页或首页工具导航卡片
-- 增加历史记录、本地缓存和最近使用
-- 增加暗色模式与移动端交互优化
+- 增加二维码、时间戳转换、正则测试、JWT 解析等常用工具
+- 为首页增加工具分类入口和快速导航
+- 增加最近使用记录与本地缓存
+- 继续优化移动端体验和资源体积
