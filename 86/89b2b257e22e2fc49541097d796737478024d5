@@ -1,0 +1,21 @@
+package.json
+  s_88c37e3a224c80::t_be3777fd13d261 1-34
+yarn.lock
+  s_88c37e3a224c80::t_30507b9a6a8067 1-2227
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.13",
+  "base_commit_sha": "8689b2b257e22e2fc49541097d796737478024d5",
+  "prompts": {},
+  "sessions": {
+    "s_88c37e3a224c80": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f44a9-0431-79c2-a12a-553a2fb3f647",
+        "model": "gpt-5.4"
+      },
+      "human_author": "追梦 <zhuimeng@tsign.cn>"
+    }
+  }
+}
