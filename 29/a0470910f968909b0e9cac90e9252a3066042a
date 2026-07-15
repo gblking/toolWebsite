@@ -1,0 +1,19 @@
+.github/workflows/deploy-pages.yml
+  s_aa28d160d5c6bf::t_ebf45dcc16c172 33-35,37,40
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "29a0470910f968909b0e9cac90e9252a3066042a",
+  "prompts": {},
+  "sessions": {
+    "s_aa28d160d5c6bf": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f64d7-c3b3-7621-97d5-5973742f7f26",
+        "model": "gpt-5.4"
+      },
+      "human_author": "追梦 <zhuimeng@tsign.cn>"
+    }
+  }
+}
