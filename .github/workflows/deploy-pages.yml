@@ -26,16 +26,18 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: yarn
 
       - name: Enable Corepack
         run: corepack enable
 
+      - name: Install pinned Yarn
+        run: corepack install
+
       - name: Install dependencies
-        run: yarn install --immutable
+        run: corepack yarn install --immutable
 
       - name: Build site
-        run: yarn build
+        run: corepack yarn build
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
